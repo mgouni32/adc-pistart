@@ -11,7 +11,7 @@ mkdir ./cal; mv localcal.txt ./cal/localcal.txt; chmod 775 ./cal/localcal.txt
 #pm2 start /usr/local/bin/node-red --node-args="--max-old-space-size=128" -- -v
 #end working code
 #run C program
-./pub.o &
+./pub.c &
 
 #run logger
 #./pidlogging.sh &

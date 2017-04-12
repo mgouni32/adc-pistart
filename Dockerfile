@@ -23,6 +23,6 @@ RUN cd wiringPi
 
 COPY . /wiringPi
 WORKDIR /wiringPi
-#RUN gcc -o pub.o pub.c -lwiringPi 
+#RUN gcc -o pub.c -lwiringPi 
 
 CMD ./pistart.sh
