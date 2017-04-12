@@ -8,7 +8,7 @@ RUN apk add --update go git
 RUN apk add --no-cache wiringpi
 RUN apk add gcc
 RUN apk add sudo
-RUN apk add linux-headers
+RUN apk add linux-headers-generic
 
 # Set up GOPATH
 RUN mkdir /go
@@ -23,6 +23,7 @@ RUN cd wiringPi
 
 COPY . /wiringPi
 WORKDIR /wiringPi
+
 RUN gcc -o pub.o pub.c -lwiringPi 
 
 CMD ./pistart.sh
