@@ -14,7 +14,7 @@ mkdir ./cal; mv localcal.txt ./cal/localcal.txt; chmod 775 ./cal/localcal.txt
 ./pub.o &
 
 #run logger
-./pidlogging.sh &
+#./pidlogging.sh &
 
 #disable_watchdog () {
     # disable the watchdog hardware
