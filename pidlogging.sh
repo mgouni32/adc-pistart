@@ -27,7 +27,7 @@ do
     echo `ps -C pidlogging.sh -o %cpu,%mem,cmd` >>/data/pid_log_$timestamp.txt
     echo `ps -C mosquitto -o %cpu,%mem,cmd` >>/data/pid_log_$timestamp.txt
     echo "Core Voltage:" >>/data/pid_log_$timestamp.txt
-    echo `vcgencmd measure_volts core` >>/data/pid_log_$timestamp.txt
+#echo `vcgencmd measure_volts core` >>/data/pid_log_$timestamp.txt
     echo >>/data/pid_log_$timestamp.txt
     sleep 5
 done
