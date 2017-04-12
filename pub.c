@@ -1,4 +1,4 @@
-//#include <errno.h>
+#include <errno.h>
 #include <wiringPi.h>
 #include <mcp3004.h>
 #include <stdio.h>
