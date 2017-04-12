@@ -20,10 +20,10 @@
 #define MQTT_HOSTNAME "localhost"
 #define MQTT_PORT 1883
 
-void on_publish(struct mosquitto *mosq, void *userdata, int mid)
-{
-    mosquitto_disconnect(mosq);
-}
+// void on_publish(struct mosquitto *mosq, void *userdata, int mid)
+// {
+//     mosquitto_disconnect(mosq);
+// }
 
 int main(int argc, char *argv[])
 
