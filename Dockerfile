@@ -18,7 +18,7 @@ ENV GOPATH /go
 
 RUN git clone git://git.drogon.net/wiringPi
 RUN cd wiringPi
-RUN git pull origin 
+#RUN git pull origin 
 RUN --build
 #RUN cd wiringPi && ./build uninstall 
 #RUN ./build
