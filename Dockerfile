@@ -5,7 +5,7 @@ RUN echo "http://dl-2.alpinelinux.org/alpine/edge/community" >> /etc/apk/reposit
     echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
     echo "http://dl-5.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk add --update go git
-RUN apk add --no-cache wiringPi
+RUN apk add --no-cache wiringpi
 RUN apk add gcc
 RUN apk add sudo
 RUN apk add --update linux-headers
