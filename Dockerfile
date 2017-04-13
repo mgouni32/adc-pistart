@@ -17,8 +17,7 @@ ENV GOPATH /go
 #RUN echo "ipv6" >> /etc/modules
 
 RUN sudo git clone git://git.drogon.net/wiringPi /opt/wiringpi
-RUN cd /opt/wiringpi 
-RUN sudo ./build
+RUN cd /opt/wiringpi && ./build
 RUN gpio -v
 RUN gpio readall
 
