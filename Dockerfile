@@ -1,4 +1,4 @@
-FROM resin/raspberrypi3-alpine-buildpack-deps:edge-scm-20170325
+FROM resin/raspberrypi3-alpine-buildpack-deps:latest
 RUN echo "ipv6" >> /etc/modules
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
     echo "http://dl-3.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
