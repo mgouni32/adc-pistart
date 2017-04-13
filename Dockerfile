@@ -16,8 +16,10 @@ RUN mkdir /go
 ENV GOPATH /go
 #RUN echo "ipv6" >> /etc/modules
 
-RUN git clone git://git.drogon.net/wiringPi
+#RUN git clone git://git.drogon.net/wiringPi
+RUN git clone https://github.com/wiringpi/wiringpi
 RUN cd wiringPi
+#RUN ./build
 #RUN git pull origin 
 RUN build
 #RUN cd wiringPi && ./build uninstall 
