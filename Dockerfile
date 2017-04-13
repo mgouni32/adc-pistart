@@ -18,8 +18,7 @@ ENV GOPATH /go
 
 RUN git clone git://git.drogon.net/wiringPi
 RUN cd wiringPi
-RUN gpio -v
-RUN gpio readall
+
 
 
 #RUN cd wiringPi
