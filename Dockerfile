@@ -8,7 +8,8 @@ RUN apk add --update go git
 RUN apk add --no-cache wiringpi
 RUN apk add gcc
 RUN apk add sudo
-RUN apk add linux-headers
+#RUN apk add linux-headers
+RUN apk add linux-libc-dev-ppc64el-cros
 
 # Set up GOPATH
 RUN mkdir /go
