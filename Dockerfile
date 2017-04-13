@@ -20,9 +20,9 @@ ENV GOPATH /go
 #RUN cd wiringPi && ./build uninstall 
 #RUN ./build
 
-RUN tar xfz wiringPi-96344ff
-RUN cd wiringPi-96344ff
-TUN ./build
+RUN tar xfz wiringPi-96344ff.tar.gz
+RUN cd wiringPi-96344ff.tar.gz
+RUN ./build
 
 #RUN cd wiringPi
 #RUN pip install wiringpi2
