@@ -16,12 +16,14 @@ RUN mkdir /go
 ENV GOPATH /go
 #RUN echo "ipv6" >> /etc/modules
 
-#RUN git clone git://git.drogon.net/wiringPi
+RUN git clone git://git.drogon.net/wiringPi
+RUN cd wiringPi
+RUN git pull origin && ./build
 #RUN cd wiringPi && ./build uninstall 
 #RUN ./build
 
 RUN apk --update add --no-cache git openssh-client curl zip unzip bash ttf-dejavu && rm -rf /var/cache/apk/*
-RUN unzip wiringPi-96344ff.tar.gz
+#RUN unzip wiringPi-96344ff.tar.gz
 RUN tar -xfz wiringPi-96344ff.tar.gz
 RUN cd wiringPi-96344ff.tar.gz
 RUN ./build
