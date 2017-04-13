@@ -20,7 +20,9 @@ ENV GOPATH /go
 #RUN cd wiringPi && ./build uninstall 
 #RUN ./build
 
-RUN tar xfz wiringPi-96344ff.tar.gz
+RUN apk --update add --no-cache git openssh-client curl zip unzip bash ttf-dejavu && rm -rf /var/cache/apk/*
+RUN unzip wiringPi-96344ff.tar.gz
+RUN tar -xfz wiringPi-96344ff.tar.gz
 RUN cd wiringPi-96344ff.tar.gz
 RUN ./build
 
