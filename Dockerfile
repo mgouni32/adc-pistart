@@ -21,15 +21,15 @@ RUN git clone https://github.com/wiringpi/wiringpi
 RUN cd wiringpi -t build wiringpi
 #RUN ./build
 #RUN git pull origin 
-RUN build
+#RUN build
 #RUN cd wiringPi && ./build uninstall 
 #RUN ./build
 
-RUN apk --update add --no-cache git openssh-client curl zip unzip bash ttf-dejavu && rm -rf /var/cache/apk/*
+#RUN apk --update add --no-cache git openssh-client curl zip unzip bash ttf-dejavu && rm -rf /var/cache/apk/*
 #RUN unzip wiringPi-96344ff.tar.gz
-RUN tar -xfz wiringPi-96344ff.tar.gz
-RUN cd wiringPi-96344ff.tar.gz
-RUN ./build
+#RUN tar -xfz wiringPi-96344ff.tar.gz
+#RUN cd wiringPi-96344ff.tar.gz
+#RUN ./build
 
 #RUN cd wiringPi
 #RUN pip install wiringpi2
