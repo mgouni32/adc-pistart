@@ -17,13 +17,9 @@ ENV GOPATH /go
 #RUN echo "ipv6" >> /etc/modules
 
 #RUN git clone git://git.drogon.net/wiringPi
+RUN pip install pyserial
 RUN git clone https://github.com/wiringpi/wiringpi
 RUN cd wiringpi -t build wiringpi
-#RUN ./build
-#RUN git pull origin 
-#RUN build
-#RUN cd wiringPi && ./build uninstall 
-#RUN ./build
 
 #RUN apk --update add --no-cache git openssh-client curl zip unzip bash ttf-dejavu && rm -rf /var/cache/apk/*
 #RUN unzip wiringPi-96344ff.tar.gz
